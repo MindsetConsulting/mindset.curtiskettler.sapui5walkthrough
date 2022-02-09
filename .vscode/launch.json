@@ -1,0 +1,86 @@
+{
+    "inputs": [
+        {
+            "id": "UI5Version",
+            "type": "command",
+            "command": "sap.ux.appGenerator.ui5Version"
+        }
+    ],
+    "configurations": [
+        {
+            "name": "Start sapui5walkthrough",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npx",
+            "cwd": "${workspaceFolder}/sapui5walkthrough",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--open",
+                "'test/flpSandbox.html#mindsetcurtiskettlersapui5walkthroughsapui5walkthrough-display'"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229,
+            "env": {
+                "DEBUG": "--inspect"
+            }
+        },
+        {
+            "name": "Start sapui5walkthrough with UI5 Version",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npx",
+            "cwd": "${workspaceFolder}/sapui5walkthrough",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--open",
+                "'test/flpSandbox.html#mindsetcurtiskettlersapui5walkthroughsapui5walkthrough-display'",
+                "--",
+                "${input:UI5Version}"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229,
+            "env": {
+                "DEBUG": "--inspect"
+            }
+        },
+        {
+            "name": "Start sapui5walkthrough Local",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/sapui5walkthrough",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--config",
+                "./ui5-local.yaml",
+                "--open",
+                "'test/flpSandbox.html#mindsetcurtiskettlersapui5walkthroughsapui5walkthrough-display'"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229,
+            "env": {}
+        }
+    ],
+    "compounds": []
+}
