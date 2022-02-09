@@ -12,11 +12,11 @@
                         <Button
                             text="Say Hello"
                             press=".onShowHello"/>
-                        <!-- <Input 
+                        <Input 
                             value="{/recipient/name}"
                             description="Hello {/recipient/name}"
                             valueLiveUpdate="ture"
-                            width="60%"/> -->
+                            width="60%"/>
                     </content>
                 </Page>
             </pages>

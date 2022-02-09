@@ -6,7 +6,7 @@ sap.ui.define([
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller, MessageToast) {
+    function (Controller, MessageToast, JSONModel) {
         "use strict";
 
         return Controller.extend("mindset.curtiskettler.sapui5walkthrough.sapui5walkthrough.controller.View1", {
