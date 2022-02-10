@@ -5,26 +5,11 @@
     xmlns="sap.m"
 >
     <Shell id="shell">
-        <App id="app">
+        <App class="myAppDemoWT" id="app">
             <pages>
                 <Page id="page" title="{i18n>title}">
                     <content>
-                        <Panel 
-                            headerText="{i18n>helloPanelTitle}"
-                            class="sapUiResponsiveMargin"
-							width="auto">
-                            <Button
-                                text="{i18n>showHelloButtonText}"
-                                press=".onShowHello"
-                                class="sapUiSmallMarginEnd"/>
-                            <Input 
-                                value="{/recipient/name}"
-                                valueLiveUpdate="true"
-                                width="60%"/>
-                            <Text
-								text="Hello {/recipient/name}"
-								class="sapUiSmallMargin"/>
-                        </Panel>
+                        <mvc:XMLView viewName="mindset.curtiskettler.sapui5walkthrough.sapui5walkthrough.view.HelloPanel"/>
                     </content>
                 </Page>
             </pages>
