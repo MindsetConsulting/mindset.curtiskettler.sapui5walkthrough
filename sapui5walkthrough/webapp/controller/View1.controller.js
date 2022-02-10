@@ -11,15 +11,22 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("mindset.curtiskettler.sapui5walkthrough.sapui5walkthrough.controller.View1", {
-            onInit: function () {
+            onInit : function () {
+                // set data model on view
                 var oData = {
-                    recipient : {
-                        name: "World"
-                    }
+                   recipient : {
+                      name : "World"
+                   }
                 };
                 var oModel = new JSONModel(oData);
                 this.getView().setModel(oModel);
-            },
+                // set i18n model on view
+                var i18nModel = new ResourceModel({
+                   bundleName: "mindset.curtiskettler.sapui5walkthrough.sapui5walkthrough.i18n.i18n"
+                });
+                this.getView().setModel(i18nModel, "i18n");
+             },
+            
             onShowHello : function () {
                 var oBundle = this.getView().getModel("i18n").getResourceBundle();
                 var sRecipient = this.getView().getModel().getProperty("/recipient/name");

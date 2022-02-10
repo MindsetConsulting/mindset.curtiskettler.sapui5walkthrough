@@ -1,7 +1,7 @@
 sap.ui.define([
         "sap/ui/core/UIComponent",
         "sap/ui/Device",
-        "mindset/curtiskettler/sapui5walkthrough/sapui5walkthrough/model/models"
+        "mindset/curtiskettler/sapui5walkthrough/sapui5walkthrough/model/models",
     ],
     function (UIComponent, Device, models) {
         "use strict";
