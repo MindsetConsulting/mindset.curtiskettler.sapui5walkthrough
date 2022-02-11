@@ -16,6 +16,7 @@
   },
   "scripts": {
     "start": "fiori run --open 'test/flpSandbox.html#mindsetcurtiskettlersapui5walkthroughsapui5walkthrough-display'",
+    "start-mock": "fiori run --open 'test/mockserver.html'",
     "start-local": "fiori run --config ./ui5-local.yaml --open 'test/flpSandbox.html#mindsetcurtiskettlersapui5walkthroughsapui5walkthrough-display'",
     "build": "ui5 build --config=ui5.yaml --clean-dest --dest dist",
     "deploy": "fiori verify",
