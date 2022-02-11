@@ -92,8 +92,8 @@
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "overview",
-          "viewName": "overview"
+          "id": "overview",
+          "name": "overview"
         },
         "detail": {
           "id": "detail",

@@ -5,15 +5,6 @@
     xmlns="sap.m"
 >
     <Shell id="shell">
-        <App class="myAppDemoWT" id="app">
-            <pages>
-                <Page id="page" title="{i18n>title}">
-                    <content>
-                        <mvc:XMLView viewName="mindset.curtiskettler.sapui5walkthrough.sapui5walkthrough.view.HelloPanel"/>
-                        <mvc:XMLView viewName="mindset.curtiskettler.sapui5walkthrough.sapui5walkthrough.view.InvoiceList"/>
-                    </content>
-                </Page>
-            </pages>
-        </App>
+        <App class="myAppDemoWT" id="app"/>
     </Shell>
 </mvc:View>
