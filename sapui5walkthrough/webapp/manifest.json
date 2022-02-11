@@ -85,7 +85,7 @@
         },
         {
           "name": "detail",
-          "pattern": "detail",
+          "pattern": "detail/{invoicePath}",
           "target": [
             "detail"
           ]
