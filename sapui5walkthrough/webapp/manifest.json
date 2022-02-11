@@ -79,12 +79,16 @@
         {
           "name": "overview",
           "pattern": "",
-          "target": "overview"
+          "target": [
+            "overview"
+          ]
         },
         {
           "name": "detail",
           "pattern": "detail",
-          "target": "detail"
+          "target": [
+            "detail"
+          ]
         }
       ],
       "targets": {
@@ -92,12 +96,15 @@
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "id": "overview",
-          "name": "overview"
+          "viewId": "overview",
+          "viewName": "Overview"
         },
         "detail": {
-          "id": "detail",
-          "name": "detail"
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "detail",
+          "viewName": "Detail"
         }
       }
     },

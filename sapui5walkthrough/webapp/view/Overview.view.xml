@@ -1,8 +1,8 @@
 <mvc:View
-		controllerName="mindset.curtiskettler.sapui5walkthrough.sapui5walkthrough.controller.App"
+		controllerName="mindset.curtiskettler.sapui5walkthrough.sapui5walkthrough.controller.View1"
 		xmlns="sap.m"
 		xmlns:mvc="sap.ui.core.mvc">
-	<Page title="{i18n>homePageTitle}">
+	<Page id="page" title="{i18n>homePageTitle}">
 		<headerContent>
 			<Button
 					icon="sap-icon://hello-world"
@@ -10,7 +10,7 @@
 		</headerContent>
 		<content>
 			<mvc:XMLView viewName="mindset.curtiskettler.sapui5walkthrough.sapui5walkthrough.view.HelloPanel"/>
-			<mvc:XMLView viewName="mindset.curtiskettler.sapui5walkthrough.sapui5walkthrough.InvoiceList"/>
+            <mvc:XMLView viewName="mindset.curtiskettler.sapui5walkthrough.sapui5walkthrough.view.InvoiceList"/>
 		</content>
 	</Page>
 </mvc:View>
